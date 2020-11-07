@@ -1,0 +1,16 @@
+body {
+  background-color: whitesmoke !important;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique !important;
+}
+
+h1 {
+  border-bottom: 3px red solid; 
+  width: 20%;
+  border-color: gray;
+  color: crimson;
+  padding-bottom: 15px;
+}

@@ -1,0 +1,28 @@
+﻿@model ContactUsViewModel
+
+@{
+  ViewData["Index"] = "Contact Us";
+}
+<link href="~/css/ContactUsForm.css" type="text/css" rel="stylesheet" />
+
+<div class="container">
+  <form asp-action="ContactUs">
+
+    <h3 style="font-family: 'Times New Roman', Times, serif; font-weight: 500; font-size: 35px;">Contact Form</h3>
+    <p style="font-family: 'Times New Roman', Times, serif;"><i class="fa fa-map-marker" aria-hidden="true"></i> CDI
+      Colleg<br> Montreal, Quebec<br> H4A R3T<br><i class="fa fa-envelope" aria-hidden="true"></i> farzad.tkm@gmail.com
+    </p>
+
+    <label for="fname"><i class="fa fa-user" aria-hidden="true"></i> Full Name</label>
+    <input asp-for="Name" placeholder="Your name.." required="required">
+
+    <label for="lname"><i class="fa fa-phone" aria-hidden="true"></i> Phone Number</label>
+    <input asp-for="PhoneNumber" placeholder="Your Phone Number.." required="required">
+
+    <label for="subject"><i class="fa fa-pencil" aria-hidden="true"></i> Subject</label>
+    <textarea asp-for="Text" placeholder="Write something.." style="height:200px" required="required"></textarea>
+
+    <input type="submit" value="Send">
+
+  </form>
+</div>
